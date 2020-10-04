@@ -1,0 +1,7 @@
+Flask
+gunicorn==19.7.1
+numpy
+Jinja2
+mysql-connector-python
+Werkzeug==0.16
+flask_cors
