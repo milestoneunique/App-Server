@@ -44,4 +44,4 @@ def silverprice():
 	silver_price = page_tree.xpath("(//table[@class='table-price'])[4]//font")[1].text
 	return jsonify({"price":float(silver_price)})
 
-app.run(debug=True)
+app.run()
