@@ -32,7 +32,8 @@ def nationalNews():
 		r['img'] = res['urlToImage']
 		r['url'] = res['url']
 		r['source'] = res['source']['name']
-		out.append(r)
+		if len(r['url'])>10:
+			out.append(r)
 
 	return jsonify(out)
 
